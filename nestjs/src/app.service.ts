@@ -2,8 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { GetListDto } from './dto/get-list.dto';
 import * as fs from 'fs';
 import * as path from 'path';
-// @ts-igorn
-import _ from 'lodash';
+import * as _ from 'lodash';
 
 export interface pokemonType {
   "zukan_id": string,
@@ -61,7 +60,6 @@ export class AppService {
   getRandom(limit: number | null): pokemonTypePartial[] {
     const res: pokemonTypePartial[] = [];
     if (limit && limit > 0) {
-
       for (let i = 0; i < limit; i++) {
         const idx = Math.floor(Math.random() * (pokemons.length + 1));
         res.push(pokemons[idx]);
@@ -81,7 +79,7 @@ export class AppService {
     const { pokemon_type_id, pokemon_ability_id, pokemon_region_id, key_word, zukan_id_from, zukan_id_to } = getListDto;
     let abilityFilter: pokemonTypePartial[];
     let typeFilter: pokemonTypePartial[];
-    let regionFilter: pokemonTypePartial[];
+    let regionFilter: pokemonTypePartial[] = [];
     const pokemonsID = pokemons.slice(zukan_id_from - 1, zukan_id_to);
     if (key_word) {
       regionFilter = pokemons.filter((v) => v.zukan_id.indexOf(key_word) > -1 || v.pokemon_name.indexOf(key_word))

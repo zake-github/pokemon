@@ -18,7 +18,7 @@ export class GetListDto {
     key_word: string | null
 
     @IsArray({
-        message: '属性格式错误'
+        message: '地区格式错误'
     })
     @IsString({
         each: true
