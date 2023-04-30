@@ -1,0 +1,74 @@
+[
+    {
+        "pokemon_type_id": "normal",
+        "pokemon_type_name": "一般"
+    },
+    {
+        "pokemon_type_id": "fire",
+        "pokemon_type_name": "火"
+    },
+    {
+        "pokemon_type_id": "water",
+        "pokemon_type_name": "水"
+    },
+    {
+        "pokemon_type_id": "grass",
+        "pokemon_type_name": "草"
+    },
+    {
+        "pokemon_type_id": "electric",
+        "pokemon_type_name": "电"
+    },
+    {
+        "pokemon_type_id": "ice",
+        "pokemon_type_name": "冰"
+    },
+    {
+        "pokemon_type_id": "fighting",
+        "pokemon_type_name": "格斗"
+    },
+    {
+        "pokemon_type_id": "poison",
+        "pokemon_type_name": "毒"
+    },
+    {
+        "pokemon_type_id": "ground",
+        "pokemon_type_name": "地面"
+    },
+    {
+        "pokemon_type_id": "flying",
+        "pokemon_type_name": "飞行"
+    },
+    {
+        "pokemon_type_id": "psychic",
+        "pokemon_type_name": "超能力"
+    },
+    {
+        "pokemon_type_id": "bug",
+        "pokemon_type_name": "虫"
+    },
+    {
+        "pokemon_type_id": "rock",
+        "pokemon_type_name": "岩石"
+    },
+    {
+        "pokemon_type_id": "ghost",
+        "pokemon_type_name": "幽灵"
+    },
+    {
+        "pokemon_type_id": "dragon",
+        "pokemon_type_name": "龙"
+    },
+    {
+        "pokemon_type_id": "dark",
+        "pokemon_type_name": "恶"
+    },
+    {
+        "pokemon_type_id": "steel",
+        "pokemon_type_name": "钢"
+    },
+    {
+        "pokemon_type_id": "fairy",
+        "pokemon_type_name": "妖精}]"
+    }
+]

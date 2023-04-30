@@ -1,0 +1,954 @@
+[
+    {
+        "pokemon_ability_id": "adaptability",
+        "pokemon_ability_name": "适应力"
+    },
+    {
+        "pokemon_ability_id": "aerilate",
+        "pokemon_ability_name": "飞行皮肤"
+    },
+    {
+        "pokemon_ability_id": "aftermath",
+        "pokemon_ability_name": "引爆"
+    },
+    {
+        "pokemon_ability_id": "air lock",
+        "pokemon_ability_name": "气闸"
+    },
+    {
+        "pokemon_ability_id": "anger point",
+        "pokemon_ability_name": "愤怒穴位"
+    },
+    {
+        "pokemon_ability_id": "anticipation",
+        "pokemon_ability_name": "危险预知"
+    },
+    {
+        "pokemon_ability_id": "arena trap",
+        "pokemon_ability_name": "沙穴"
+    },
+    {
+        "pokemon_ability_id": "aura",
+        "pokemon_ability_name": "气场破坏"
+    },
+    {
+        "pokemon_ability_id": "bad dreams",
+        "pokemon_ability_name": "梦魇"
+    },
+    {
+        "pokemon_ability_id": "battery",
+        "pokemon_ability_name": "蓄电池"
+    },
+    {
+        "pokemon_ability_id": "battle armor",
+        "pokemon_ability_name": "战斗盔甲"
+    },
+    {
+        "pokemon_ability_id": "beast boost",
+        "pokemon_ability_name": "异兽提升"
+    },
+    {
+        "pokemon_ability_id": "berserk",
+        "pokemon_ability_name": "怒火冲天"
+    },
+    {
+        "pokemon_ability_id": "big pecks",
+        "pokemon_ability_name": "健壮胸肌"
+    },
+    {
+        "pokemon_ability_id": "blaze",
+        "pokemon_ability_name": "猛火"
+    },
+    {
+        "pokemon_ability_id": "bulletproof",
+        "pokemon_ability_name": "防弹"
+    },
+    {
+        "pokemon_ability_id": "cheek pouch",
+        "pokemon_ability_name": "颊囊"
+    },
+    {
+        "pokemon_ability_id": "chlorophyll",
+        "pokemon_ability_name": "叶绿素"
+    },
+    {
+        "pokemon_ability_id": "clear body",
+        "pokemon_ability_name": "恒净之躯"
+    },
+    {
+        "pokemon_ability_id": "cloud nine",
+        "pokemon_ability_name": "无关天气"
+    },
+    {
+        "pokemon_ability_id": "color change",
+        "pokemon_ability_name": "变色"
+    },
+    {
+        "pokemon_ability_id": "comatose",
+        "pokemon_ability_name": "绝对睡眠"
+    },
+    {
+        "pokemon_ability_id": "competitive",
+        "pokemon_ability_name": "好胜"
+    },
+    {
+        "pokemon_ability_id": "compound eyes",
+        "pokemon_ability_name": "复眼"
+    },
+    {
+        "pokemon_ability_id": "contrary",
+        "pokemon_ability_name": "唱反调"
+    },
+    {
+        "pokemon_ability_id": "corrosion",
+        "pokemon_ability_name": "腐蚀"
+    },
+    {
+        "pokemon_ability_id": "cursed body",
+        "pokemon_ability_name": "诅咒之躯"
+    },
+    {
+        "pokemon_ability_id": "cute charm",
+        "pokemon_ability_name": "迷人之躯"
+    },
+    {
+        "pokemon_ability_id": "damp",
+        "pokemon_ability_name": "湿气"
+    },
+    {
+        "pokemon_ability_id": "dancer",
+        "pokemon_ability_name": "舞者"
+    },
+    {
+        "pokemon_ability_id": "dark aura",
+        "pokemon_ability_name": "暗黑气场"
+    },
+    {
+        "pokemon_ability_id": "dazzling",
+        "pokemon_ability_name": "鲜艳之躯"
+    },
+    {
+        "pokemon_ability_id": "defeatist",
+        "pokemon_ability_name": "软弱"
+    },
+    {
+        "pokemon_ability_id": "defiant",
+        "pokemon_ability_name": "不服输"
+    },
+    {
+        "pokemon_ability_id": "delta stream",
+        "pokemon_ability_name": "德尔塔气流"
+    },
+    {
+        "pokemon_ability_id": "desolate land",
+        "pokemon_ability_name": "终结之地"
+    },
+    {
+        "pokemon_ability_id": "disguise",
+        "pokemon_ability_name": "画皮"
+    },
+    {
+        "pokemon_ability_id": "download",
+        "pokemon_ability_name": "下载"
+    },
+    {
+        "pokemon_ability_id": "drizzle",
+        "pokemon_ability_name": "降雨"
+    },
+    {
+        "pokemon_ability_id": "drought",
+        "pokemon_ability_name": "日照"
+    },
+    {
+        "pokemon_ability_id": "dry skin",
+        "pokemon_ability_name": "干燥皮肤"
+    },
+    {
+        "pokemon_ability_id": "early bird",
+        "pokemon_ability_name": "早起"
+    },
+    {
+        "pokemon_ability_id": "effect spore",
+        "pokemon_ability_name": "孢子"
+    },
+    {
+        "pokemon_ability_id": "electric surge",
+        "pokemon_ability_name": "电气制造者"
+    },
+    {
+        "pokemon_ability_id": "emergency exit",
+        "pokemon_ability_name": "危险回避"
+    },
+    {
+        "pokemon_ability_id": "fairy aura",
+        "pokemon_ability_name": "妖精气场"
+    },
+    {
+        "pokemon_ability_id": "filter",
+        "pokemon_ability_name": "过滤"
+    },
+    {
+        "pokemon_ability_id": "flame body",
+        "pokemon_ability_name": "火焰之躯"
+    },
+    {
+        "pokemon_ability_id": "flash fire",
+        "pokemon_ability_name": "引火"
+    },
+    {
+        "pokemon_ability_id": "flower gift",
+        "pokemon_ability_name": "花之礼"
+    },
+    {
+        "pokemon_ability_id": "flower veil",
+        "pokemon_ability_name": "花幕"
+    },
+    {
+        "pokemon_ability_id": "fluffy",
+        "pokemon_ability_name": "毛茸茸"
+    },
+    {
+        "pokemon_ability_id": "forecast",
+        "pokemon_ability_name": "阴晴不定"
+    },
+    {
+        "pokemon_ability_id": "forewarn",
+        "pokemon_ability_name": "预知梦"
+    },
+    {
+        "pokemon_ability_id": "frisk",
+        "pokemon_ability_name": "察觉"
+    },
+    {
+        "pokemon_ability_id": "full metal body",
+        "pokemon_ability_name": "金属防护"
+    },
+    {
+        "pokemon_ability_id": "fur coat",
+        "pokemon_ability_name": "毛皮大衣"
+    },
+    {
+        "pokemon_ability_id": "gluttony",
+        "pokemon_ability_name": "贪吃鬼"
+    },
+    {
+        "pokemon_ability_id": "grassy surge",
+        "pokemon_ability_name": "青草制造者"
+    },
+    {
+        "pokemon_ability_id": "guts",
+        "pokemon_ability_name": "毅力"
+    },
+    {
+        "pokemon_ability_id": "healer",
+        "pokemon_ability_name": "治愈之心"
+    },
+    {
+        "pokemon_ability_id": "heatproof",
+        "pokemon_ability_name": "耐热"
+    },
+    {
+        "pokemon_ability_id": "heavy metal",
+        "pokemon_ability_name": "重金属"
+    },
+    {
+        "pokemon_ability_id": "honey gather",
+        "pokemon_ability_name": "采蜜"
+    },
+    {
+        "pokemon_ability_id": "huge power",
+        "pokemon_ability_name": "大力士"
+    },
+    {
+        "pokemon_ability_id": "hustle",
+        "pokemon_ability_name": "活力"
+    },
+    {
+        "pokemon_ability_id": "hydration",
+        "pokemon_ability_name": "湿润之躯"
+    },
+    {
+        "pokemon_ability_id": "hyper cutter",
+        "pokemon_ability_name": "怪力钳"
+    },
+    {
+        "pokemon_ability_id": "ice body",
+        "pokemon_ability_name": "冰冻之躯"
+    },
+    {
+        "pokemon_ability_id": "illuminate",
+        "pokemon_ability_name": "发光"
+    },
+    {
+        "pokemon_ability_id": "illusion",
+        "pokemon_ability_name": "幻觉"
+    },
+    {
+        "pokemon_ability_id": "immunity",
+        "pokemon_ability_name": "免疫"
+    },
+    {
+        "pokemon_ability_id": "infiltrator",
+        "pokemon_ability_name": "穿透"
+    },
+    {
+        "pokemon_ability_id": "innards out",
+        "pokemon_ability_name": "飞出的内在物"
+    },
+    {
+        "pokemon_ability_id": "inner focus",
+        "pokemon_ability_name": "精神力"
+    },
+    {
+        "pokemon_ability_id": "insomnia",
+        "pokemon_ability_name": "不眠"
+    },
+    {
+        "pokemon_ability_id": "intimidate",
+        "pokemon_ability_name": "威吓"
+    },
+    {
+        "pokemon_ability_id": "iron barbs",
+        "pokemon_ability_name": "铁刺"
+    },
+    {
+        "pokemon_ability_id": "iron fist",
+        "pokemon_ability_name": "铁拳"
+    },
+    {
+        "pokemon_ability_id": "justified",
+        "pokemon_ability_name": "正义之心"
+    },
+    {
+        "pokemon_ability_id": "keen eye",
+        "pokemon_ability_name": "锐利目光"
+    },
+    {
+        "pokemon_ability_id": "klutz",
+        "pokemon_ability_name": "笨拙"
+    },
+    {
+        "pokemon_ability_id": "leaf guard",
+        "pokemon_ability_name": "叶子防守"
+    },
+    {
+        "pokemon_ability_id": "levitate",
+        "pokemon_ability_name": "飘浮"
+    },
+    {
+        "pokemon_ability_id": "light metal",
+        "pokemon_ability_name": "轻金属"
+    },
+    {
+        "pokemon_ability_id": "lightning rod",
+        "pokemon_ability_name": "避雷针"
+    },
+    {
+        "pokemon_ability_id": "limber",
+        "pokemon_ability_name": "柔软"
+    },
+    {
+        "pokemon_ability_id": "liquid ooze",
+        "pokemon_ability_name": "污泥浆"
+    },
+    {
+        "pokemon_ability_id": "magic bounce",
+        "pokemon_ability_name": "魔法镜"
+    },
+    {
+        "pokemon_ability_id": "magic guard",
+        "pokemon_ability_name": "魔法防守"
+    },
+    {
+        "pokemon_ability_id": "magician",
+        "pokemon_ability_name": "魔术师"
+    },
+    {
+        "pokemon_ability_id": "magma armor",
+        "pokemon_ability_name": "熔岩铠甲"
+    },
+    {
+        "pokemon_ability_id": "magnet pull",
+        "pokemon_ability_name": "磁力"
+    },
+    {
+        "pokemon_ability_id": "marvel scale",
+        "pokemon_ability_name": "神奇鳞片"
+    },
+    {
+        "pokemon_ability_id": "mega launcher",
+        "pokemon_ability_name": "超级发射器"
+    },
+    {
+        "pokemon_ability_id": "merciless",
+        "pokemon_ability_name": "不仁不义"
+    },
+    {
+        "pokemon_ability_id": "minus",
+        "pokemon_ability_name": "负电"
+    },
+    {
+        "pokemon_ability_id": "misty surge",
+        "pokemon_ability_name": "薄雾制造者"
+    },
+    {
+        "pokemon_ability_id": "mold breaker",
+        "pokemon_ability_name": "破格"
+    },
+    {
+        "pokemon_ability_id": "motor drive",
+        "pokemon_ability_name": "电气引擎"
+    },
+    {
+        "pokemon_ability_id": "moxie",
+        "pokemon_ability_name": "自信过度"
+    },
+    {
+        "pokemon_ability_id": "multitype",
+        "pokemon_ability_name": "多属性"
+    },
+    {
+        "pokemon_ability_id": "mummy",
+        "pokemon_ability_name": "木乃伊"
+    },
+    {
+        "pokemon_ability_id": "natural cure",
+        "pokemon_ability_name": "自然回复"
+    },
+    {
+        "pokemon_ability_id": "neuroforce",
+        "pokemon_ability_name": "脑核之力"
+    },
+    {
+        "pokemon_ability_id": "no guard",
+        "pokemon_ability_name": "无防守"
+    },
+    {
+        "pokemon_ability_id": "normalize",
+        "pokemon_ability_name": "一般皮肤"
+    },
+    {
+        "pokemon_ability_id": "oblivious",
+        "pokemon_ability_name": "迟钝"
+    },
+    {
+        "pokemon_ability_id": "overcoat",
+        "pokemon_ability_name": "防尘"
+    },
+    {
+        "pokemon_ability_id": "overgrow",
+        "pokemon_ability_name": "茂盛"
+    },
+    {
+        "pokemon_ability_id": "own tempo",
+        "pokemon_ability_name": "我行我素"
+    },
+    {
+        "pokemon_ability_id": "parental bond",
+        "pokemon_ability_name": "亲子爱"
+    },
+    {
+        "pokemon_ability_id": "pickup",
+        "pokemon_ability_name": "捡拾"
+    },
+    {
+        "pokemon_ability_id": "pixilate",
+        "pokemon_ability_name": "妖精皮肤"
+    },
+    {
+        "pokemon_ability_id": "plus",
+        "pokemon_ability_name": "正电"
+    },
+    {
+        "pokemon_ability_id": "poison heal",
+        "pokemon_ability_name": "毒疗"
+    },
+    {
+        "pokemon_ability_id": "poison point",
+        "pokemon_ability_name": "毒刺"
+    },
+    {
+        "pokemon_ability_id": "poison touch",
+        "pokemon_ability_name": "毒手"
+    },
+    {
+        "pokemon_ability_id": "power construct",
+        "pokemon_ability_name": "群聚变形"
+    },
+    {
+        "pokemon_ability_id": "prankster",
+        "pokemon_ability_name": "恶作剧之心"
+    },
+    {
+        "pokemon_ability_id": "pressure",
+        "pokemon_ability_name": "压迫感"
+    },
+    {
+        "pokemon_ability_id": "primordial sea",
+        "pokemon_ability_name": "始源之海"
+    },
+    {
+        "pokemon_ability_id": "prism armor",
+        "pokemon_ability_name": "棱镜装甲"
+    },
+    {
+        "pokemon_ability_id": "psychic surge",
+        "pokemon_ability_name": "精神制造者"
+    },
+    {
+        "pokemon_ability_id": "pure power",
+        "pokemon_ability_name": "瑜伽之力"
+    },
+    {
+        "pokemon_ability_id": "queenly majesty",
+        "pokemon_ability_name": "女王的威严"
+    },
+    {
+        "pokemon_ability_id": "quick feet",
+        "pokemon_ability_name": "飞毛腿"
+    },
+    {
+        "pokemon_ability_id": "rain dish",
+        "pokemon_ability_name": "雨盘"
+    },
+    {
+        "pokemon_ability_id": "rattled",
+        "pokemon_ability_name": "胆怯"
+    },
+    {
+        "pokemon_ability_id": "receiver",
+        "pokemon_ability_name": "接球手"
+    },
+    {
+        "pokemon_ability_id": "reckless",
+        "pokemon_ability_name": "舍身"
+    },
+    {
+        "pokemon_ability_id": "refrigerate",
+        "pokemon_ability_name": "冰冻皮肤"
+    },
+    {
+        "pokemon_ability_id": "regenerator",
+        "pokemon_ability_name": "再生力"
+    },
+    {
+        "pokemon_ability_id": "rivalry",
+        "pokemon_ability_name": "斗争心"
+    },
+    {
+        "pokemon_ability_id": "rks system",
+        "pokemon_ability_name": "ＡＲ系统"
+    },
+    {
+        "pokemon_ability_id": "rock head",
+        "pokemon_ability_name": "坚硬脑袋"
+    },
+    {
+        "pokemon_ability_id": "rough skin",
+        "pokemon_ability_name": "粗糙皮肤"
+    },
+    {
+        "pokemon_ability_id": "run away",
+        "pokemon_ability_name": "逃跑"
+    },
+    {
+        "pokemon_ability_id": "sand force",
+        "pokemon_ability_name": "沙之力"
+    },
+    {
+        "pokemon_ability_id": "sand rush",
+        "pokemon_ability_name": "拨沙"
+    },
+    {
+        "pokemon_ability_id": "sand stream",
+        "pokemon_ability_name": "扬沙"
+    },
+    {
+        "pokemon_ability_id": "sand veil",
+        "pokemon_ability_name": "沙隐"
+    },
+    {
+        "pokemon_ability_id": "sap sipper",
+        "pokemon_ability_name": "食草"
+    },
+    {
+        "pokemon_ability_id": "schooling",
+        "pokemon_ability_name": "鱼群"
+    },
+    {
+        "pokemon_ability_id": "scrappy",
+        "pokemon_ability_name": "胆量"
+    },
+    {
+        "pokemon_ability_id": "serene grace",
+        "pokemon_ability_name": "天恩"
+    },
+    {
+        "pokemon_ability_id": "shadow shield",
+        "pokemon_ability_name": "幻影防守"
+    },
+    {
+        "pokemon_ability_id": "shadow tag",
+        "pokemon_ability_name": "踩影"
+    },
+    {
+        "pokemon_ability_id": "shed skin",
+        "pokemon_ability_name": "蜕皮"
+    },
+    {
+        "pokemon_ability_id": "sheer force",
+        "pokemon_ability_name": "强行"
+    },
+    {
+        "pokemon_ability_id": "shell armor",
+        "pokemon_ability_name": "硬壳盔甲"
+    },
+    {
+        "pokemon_ability_id": "shield dust",
+        "pokemon_ability_name": "鳞粉"
+    },
+    {
+        "pokemon_ability_id": "shields down",
+        "pokemon_ability_name": "界限盾壳"
+    },
+    {
+        "pokemon_ability_id": "simple",
+        "pokemon_ability_name": "单纯"
+    },
+    {
+        "pokemon_ability_id": "skill link",
+        "pokemon_ability_name": "连续攻击"
+    },
+    {
+        "pokemon_ability_id": "slow start",
+        "pokemon_ability_name": "慢启动"
+    },
+    {
+        "pokemon_ability_id": "slush rush",
+        "pokemon_ability_name": "拨雪"
+    },
+    {
+        "pokemon_ability_id": "sniper",
+        "pokemon_ability_name": "狙击手"
+    },
+    {
+        "pokemon_ability_id": "snow cloak",
+        "pokemon_ability_name": "雪隐"
+    },
+    {
+        "pokemon_ability_id": "snow warning",
+        "pokemon_ability_name": "降雪"
+    },
+    {
+        "pokemon_ability_id": "solar power",
+        "pokemon_ability_name": "太阳之力"
+    },
+    {
+        "pokemon_ability_id": "solid rock",
+        "pokemon_ability_name": "坚硬岩石"
+    },
+    {
+        "pokemon_ability_id": "soul-heart",
+        "pokemon_ability_name": "魂心"
+    },
+    {
+        "pokemon_ability_id": "soundproof",
+        "pokemon_ability_name": "隔音"
+    },
+    {
+        "pokemon_ability_id": "speed boost",
+        "pokemon_ability_name": "加速"
+    },
+    {
+        "pokemon_ability_id": "stakeout",
+        "pokemon_ability_name": "蹲守"
+    },
+    {
+        "pokemon_ability_id": "stall",
+        "pokemon_ability_name": "慢出"
+    },
+    {
+        "pokemon_ability_id": "stamina",
+        "pokemon_ability_name": "持久力"
+    },
+    {
+        "pokemon_ability_id": "stance change",
+        "pokemon_ability_name": "战斗切换"
+    },
+    {
+        "pokemon_ability_id": "static",
+        "pokemon_ability_name": "静电"
+    },
+    {
+        "pokemon_ability_id": "steadfast",
+        "pokemon_ability_name": "不屈之心"
+    },
+    {
+        "pokemon_ability_id": "steelworker",
+        "pokemon_ability_name": "钢能力者"
+    },
+    {
+        "pokemon_ability_id": "stench",
+        "pokemon_ability_name": "恶臭"
+    },
+    {
+        "pokemon_ability_id": "sticky hold",
+        "pokemon_ability_name": "黏着"
+    },
+    {
+        "pokemon_ability_id": "storm drain",
+        "pokemon_ability_name": "引水"
+    },
+    {
+        "pokemon_ability_id": "strong jaw",
+        "pokemon_ability_name": "强壮之颚"
+    },
+    {
+        "pokemon_ability_id": "sturdy",
+        "pokemon_ability_name": "结实"
+    },
+    {
+        "pokemon_ability_id": "suction cups",
+        "pokemon_ability_name": "吸盘"
+    },
+    {
+        "pokemon_ability_id": "super luck",
+        "pokemon_ability_name": "超幸运"
+    },
+    {
+        "pokemon_ability_id": "surge surfer",
+        "pokemon_ability_name": "冲浪之尾"
+    },
+    {
+        "pokemon_ability_id": "swarm",
+        "pokemon_ability_name": "虫之预感"
+    },
+    {
+        "pokemon_ability_id": "sweet veil",
+        "pokemon_ability_name": "甜幕"
+    },
+    {
+        "pokemon_ability_id": "swift swim",
+        "pokemon_ability_name": "悠游自如"
+    },
+    {
+        "pokemon_ability_id": "synchronize",
+        "pokemon_ability_name": "同步"
+    },
+    {
+        "pokemon_ability_id": "tangled feet",
+        "pokemon_ability_name": "蹒跚"
+    },
+    {
+        "pokemon_ability_id": "tangling hair",
+        "pokemon_ability_name": "卷发"
+    },
+    {
+        "pokemon_ability_id": "technician",
+        "pokemon_ability_name": "技术高手"
+    },
+    {
+        "pokemon_ability_id": "telepathy",
+        "pokemon_ability_name": "心灵感应"
+    },
+    {
+        "pokemon_ability_id": "teravolt",
+        "pokemon_ability_name": "兆级电压"
+    },
+    {
+        "pokemon_ability_id": "thick fat",
+        "pokemon_ability_name": "厚脂肪"
+    },
+    {
+        "pokemon_ability_id": "tinted lens",
+        "pokemon_ability_name": "有色眼镜"
+    },
+    {
+        "pokemon_ability_id": "torrent",
+        "pokemon_ability_name": "激流"
+    },
+    {
+        "pokemon_ability_id": "tough claws",
+        "pokemon_ability_name": "硬爪"
+    },
+    {
+        "pokemon_ability_id": "trace",
+        "pokemon_ability_name": "复制"
+    },
+    {
+        "pokemon_ability_id": "triage",
+        "pokemon_ability_name": "先行治疗"
+    },
+    {
+        "pokemon_ability_id": "truant",
+        "pokemon_ability_name": "懒惰"
+    },
+    {
+        "pokemon_ability_id": "turboblaze",
+        "pokemon_ability_name": "涡轮火焰"
+    },
+    {
+        "pokemon_ability_id": "unaware",
+        "pokemon_ability_name": "纯朴"
+    },
+    {
+        "pokemon_ability_id": "unburden",
+        "pokemon_ability_name": "轻装"
+    },
+    {
+        "pokemon_ability_id": "unnerve",
+        "pokemon_ability_name": "紧张感"
+    },
+    {
+        "pokemon_ability_id": "victory star",
+        "pokemon_ability_name": "胜利之星"
+    },
+    {
+        "pokemon_ability_id": "vital spirit",
+        "pokemon_ability_name": "干劲"
+    },
+    {
+        "pokemon_ability_id": "volt absorb",
+        "pokemon_ability_name": "蓄电"
+    },
+    {
+        "pokemon_ability_id": "water absorb",
+        "pokemon_ability_name": "储水"
+    },
+    {
+        "pokemon_ability_id": "water bubble",
+        "pokemon_ability_name": "水泡"
+    },
+    {
+        "pokemon_ability_id": "water compaction",
+        "pokemon_ability_name": "遇水凝固"
+    },
+    {
+        "pokemon_ability_id": "water veil",
+        "pokemon_ability_name": "水幕"
+    },
+    {
+        "pokemon_ability_id": "weak armor",
+        "pokemon_ability_name": "碎裂铠甲"
+    },
+    {
+        "pokemon_ability_id": "white smoke",
+        "pokemon_ability_name": "白色烟雾"
+    },
+    {
+        "pokemon_ability_id": "wimp out",
+        "pokemon_ability_name": "跃跃欲逃"
+    },
+    {
+        "pokemon_ability_id": "wonder guard",
+        "pokemon_ability_name": "神奇守护"
+    },
+    {
+        "pokemon_ability_id": "wonder skin",
+        "pokemon_ability_name": "奇迹皮肤"
+    },
+    {
+        "pokemon_ability_id": "ball fetch",
+        "pokemon_ability_name": "捡球"
+    },
+    {
+        "pokemon_ability_id": "screen cleaner",
+        "pokemon_ability_name": "除障"
+    },
+    {
+        "pokemon_ability_id": "steam engine",
+        "pokemon_ability_name": "蒸汽机"
+    },
+    {
+        "pokemon_ability_id": "gorilla tactics",
+        "pokemon_ability_name": "一猩一意"
+    },
+    {
+        "pokemon_ability_id": "intrepid sword",
+        "pokemon_ability_name": "不挠之剑"
+    },
+    {
+        "pokemon_ability_id": "dauntless shield",
+        "pokemon_ability_name": "不屈之盾"
+    },
+    {
+        "pokemon_ability_id": "cotton down",
+        "pokemon_ability_name": "棉絮"
+    },
+    {
+        "pokemon_ability_id": "gulp missile",
+        "pokemon_ability_name": "一口导弹"
+    },
+    {
+        "pokemon_ability_id": "punk rock",
+        "pokemon_ability_name": "庞克摇滚"
+    },
+    {
+        "pokemon_ability_id": "sand spit",
+        "pokemon_ability_name": "吐沙"
+    },
+    {
+        "pokemon_ability_id": "ripen",
+        "pokemon_ability_name": "熟成"
+    },
+    {
+        "pokemon_ability_id": "ice face",
+        "pokemon_ability_name": "结冻头"
+    },
+    {
+        "pokemon_ability_id": "power spot",
+        "pokemon_ability_name": "能量点"
+    },
+    {
+        "pokemon_ability_id": "mimicry",
+        "pokemon_ability_name": "拟态"
+    },
+    {
+        "pokemon_ability_id": "neutralizing gas",
+        "pokemon_ability_name": "化学变化气体"
+    },
+    {
+        "pokemon_ability_id": "pastel veil",
+        "pokemon_ability_name": "粉彩护幕"
+    },
+    {
+        "pokemon_ability_id": "hunger+switch",
+        "pokemon_ability_name": "饱了又饿"
+    },
+    {
+        "pokemon_ability_id": "wandering spirit",
+        "pokemon_ability_name": "游魂"
+    },
+    {
+        "pokemon_ability_id": "unseen fist",
+        "pokemon_ability_name": "无形拳"
+    },
+    {
+        "pokemon_ability_id": "transistor",
+        "pokemon_ability_name": "电晶体"
+    },
+    {
+        "pokemon_ability_id": "dragon's+maw",
+        "pokemon_ability_name": "龙颚"
+    },
+    {
+        "pokemon_ability_id": "chilling neigh",
+        "pokemon_ability_name": "苍白嘶鸣"
+    },
+    {
+        "pokemon_ability_id": "grim neigh",
+        "pokemon_ability_name": "漆黑嘶鸣"
+    },
+    {
+        "pokemon_ability_id": "as one",
+        "pokemon_ability_name": "人马一体"
+    },
+    {
+        "pokemon_ability_id": "quick draw",
+        "pokemon_ability_name": "速击"
+    },
+    {
+        "pokemon_ability_id": "curious medicine",
+        "pokemon_ability_name": "怪药"
+    }
+]
