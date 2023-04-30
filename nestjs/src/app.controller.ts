@@ -12,11 +12,14 @@ export class AppController {
   getRandom(@Query('limit') limit: number): pokemonTypePartial[] {
     return this.appService.getRandom(limit);
   }
+
+  // 查询
   @Get('list')
   getList(@Query() getListDto: GetListDto): pokemonTypePartial[] {
     return this.appService.getList(getListDto);
   }
-
+  
+  // 详情
   @Get('detail/:id')
   getDetail(@Param() id: string): pokemonTypePartial {
     return this.appService.getDetail(id);
