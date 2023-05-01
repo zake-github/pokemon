@@ -41,6 +41,10 @@ export interface pokemonTypeType {
   pokemon_type_id: string;
   pokemon_type_name: string;
 }
+export interface pokemonRegionType {
+  pokemon_region: string;
+  pokemon_region_name: string;
+}
 
 const pok = fs.readFileSync(path.join(__dirname, '..', '/public/pokemons.json'), { encoding: 'utf-8' });
 let pokemons = JSON.parse(pok);
@@ -77,31 +81,28 @@ export class AppService {
   // 查询
   getList(getListDto: GetListDto): pokemonTypePartial[] {
     const { pokemon_type_id, pokemon_ability_id, pokemon_region_id, key_word, zukan_id_from, zukan_id_to } = getListDto;
-    let abilityFilter: pokemonTypePartial[];
-    let typeFilter: pokemonTypePartial[];
-    let regionFilter: pokemonTypePartial[] = [];
-    const pokemonsID = pokemons.slice(zukan_id_from - 1, zukan_id_to);
+    let pokemonsID = pokemons.slice(zukan_id_from - 1, zukan_id_to);
     if (key_word) {
-      regionFilter = pokemons.filter((v) => v.zukan_id.indexOf(key_word) > -1 || v.pokemon_name.indexOf(key_word))
+      pokemonsID = pokemons.filter((v) => v.zukan_id.indexOf(key_word) > -1 || v.pokemon_name.indexOf(key_word) > -1)
     } else {
       if (pokemon_ability_id) {
-        abilityFilter = pokemonsID.filter((v) => v.pokemon_ability_id === pokemon_ability_id)
+        pokemonsID = pokemonsID.filter((v) => v.pokemon_ability_id === pokemon_ability_id)
       }
 
       if (Array.isArray(pokemon_type_id)) {
-        typeFilter = pokemon_type_id.reduce((arr, type) => {
-          return arr.concat(abilityFilter.filter((v) => v.pokemon_type_id.split(',').includes(type)));
+        pokemonsID = pokemon_type_id.reduce((arr, type) => {
+          return arr.concat(pokemonsID.filter((v) => v.pokemon_type_id.split(',').includes(type)));
         }, [])
       }
 
       if (Array.isArray(pokemon_region_id)) {
-        regionFilter = pokemon_region_id.reduce((arr, region) => {
-          return arr.concat(typeFilter.filter((v) => v.pokemon_region_id === region));
+        pokemonsID = pokemon_region_id.reduce((arr, region) => {
+          return arr.concat(pokemonsID.filter((v) => v.pokemon_region_id === region));
         }, [])
       }
     }
 
-    return regionFilter;
+    return pokemonsID;
   }
   // 详情
   getDetail(id: string): pokemonTypePartial {
@@ -113,7 +114,34 @@ export class AppService {
     } else {
       zukan_id = id;
     }
-    const res = pokemons.find(v => v.zukan_id === zukan_id && zukan_sub_id === zukan_sub_id);
+    const idx = pokemons.findIndex(v => v.zukan_id === zukan_id && zukan_sub_id === zukan_sub_id);
+    const res = _.cloneDeep(pokemons[idx]);
+    if(idx !== pokemons.length - 1) {
+      const {zukan_id, zukan_sub_id, pokemon_name} = pokemons[idx + 1]
+      res.next = {
+        zukan_id,
+        zukan_sub_id,
+        pokemon_name
+      }
+    }
+    if(idx > 0) {
+      const {zukan_id, zukan_sub_id, pokemon_name} = pokemons[idx - 1]
+      res.last = {
+        zukan_id,
+        zukan_sub_id,
+        pokemon_name
+      }
+    }
+    const allAppearance = pokemons.filter(v => v.zukan_id === zukan_id);
+    if(allAppearance > 1) {
+      res.appearance = allAppearance;
+    }
+    if(res.evolutionary_route.length) {
+      res.evolutionary_route = res.evolutionary_route.map(id => {
+        const {zukan_id, zukan_sub_id, pokemon_name, pokemon_type_name} = pokemons.find(v => v.zukan_id === id && v.zukan_sub_id === 0)
+        return {zukan_id, zukan_sub_id, pokemon_name, pokemon_type_name};
+      })
+    }
     return res;
   }
   // 特性
@@ -123,6 +151,10 @@ export class AppService {
   // 属性
   getType(): pokemonTypeType[] {
     return pokemonTypes;
+  }
+  // 地区
+  getRegion(): pokemonRegionType[] {
+    return regions;
   }
   getMaxId(): number {
     return pokemons.reduce((n, i) => {
