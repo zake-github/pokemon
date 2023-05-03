@@ -10,14 +10,21 @@ import { response } from './common/response'; //
 import { Request, Response, NextFunction } from 'express';
 import { apis } from './config';
 import { join } from 'path';
+const { createProxyMiddleware } = require('http-proxy-middleware');
+
 // 全局拦截（中间件）
 function middlewareAll(req: Request, res: Response, next: NextFunction) {
   console.log(req.originalUrl);
+  const url = req.originalUrl.split('?')[0];
+  if (url.includes('/play/resources')) {
+    next();
+    return;
+  }
+
   const regs = apis.map(v => new RegExp(`^${v}$`))
   let isPass = false;
-  const url = req.originalUrl.split('?')[0];
   regs.forEach(reg => {
-    if(reg.test(url)) {
+    if (reg.test(url)) {
       isPass = true;
     }
   })
@@ -35,6 +42,14 @@ async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   app.use(cors());
   app.use(
+    '/play/resources',
+    createProxyMiddleware({
+      target: `https://www.pokemon.cn`,
+      logLevel: 'debug',
+      changeOrigin: true,
+    })
+  );
+  app.use(
     session({
       secret: 'zs', // 生成服务端session签名 加盐
       name: 'token', // 生成客户端cookie名字默认connect sid
@@ -46,7 +61,11 @@ async function bootstrap() {
     }),
   );
   app.useStaticAssets(join(__dirname, '..', 'public'));
-  app.useStaticAssets(join(__dirname, '..', 'pokedex'));
+  app.useStaticAssets(join(__dirname, '..', 'pokedex'),
+    {
+      prefix: '/img/pm',
+    });
+
   app.use(middlewareAll); // 拦截
   // 全局守卫
   app.useGlobalGuards(new RoleGuard(new Reflector()))

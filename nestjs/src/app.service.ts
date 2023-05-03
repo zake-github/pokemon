@@ -3,48 +3,8 @@ import { GetListDto } from './dto/get-list.dto';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as _ from 'lodash';
+import type { pokemonTypePartial, pokemonAbilityType, pokemonTypeType, pokemonRegionType } from './type/index';
 
-export interface pokemonType {
-  "zukan_id": string,
-  "zukan_sub_id": number,
-  "pokemon_name": string,
-  "pokemon_sub_name": string,
-  "weight": number,
-  "height": number,
-  "file_name": string,
-  "pokemon_type_id": string,
-  "pokemon_type_name": string,
-  "pokemon_region_name": string,
-  "pokemon_region_id": string,
-  "pokemon_ability_name": string,
-  "pokemon_ability_id": string,
-  "male": boolean,
-  "female": boolean,
-  "pokemon-weakness": string[],
-  "pokemon_info_category": "-",
-  "pokemon-story": string,
-  "hp": number,
-  "attack": number,
-  "defense": number,
-  "special_merit": number,
-  "Special_defense": number,
-  "speed": number,
-  "evolutionary_route": string[]
-}
-export type pokemonTypePartial = Partial<pokemonType>;
-
-export interface pokemonAbilityType {
-  pokemon_ability_id: string;
-  pokemon_ability_name: string;
-}
-export interface pokemonTypeType {
-  pokemon_type_id: string;
-  pokemon_type_name: string;
-}
-export interface pokemonRegionType {
-  pokemon_region: string;
-  pokemon_region_name: string;
-}
 
 const pok = fs.readFileSync(path.join(__dirname, '..', '/public/pokemons.json'), { encoding: 'utf-8' });
 let pokemons = JSON.parse(pok);
@@ -72,7 +32,7 @@ export class AppService {
       const pokemonsAll = _.cloneDeep(pokemons);
       while (pokemonsAll.length > 0) {
         const idx = Math.floor(Math.random() * (pokemonsAll.length + 1));
-        const i = pokemonsAll.splice(idx, 1);
+        const i = pokemonsAll.splice(idx, 1)[0];
         res.push(i);
       }
     }
@@ -86,16 +46,16 @@ export class AppService {
       pokemonsID = pokemons.filter((v) => v.zukan_id.indexOf(key_word) > -1 || v.pokemon_name.indexOf(key_word) > -1)
     } else {
       if (pokemon_ability_id) {
-        pokemonsID = pokemonsID.filter((v) => v.pokemon_ability_id === pokemon_ability_id)
+        pokemonsID = pokemonsID.filter((v) => v.pokemon_ability_id.indexOf(pokemon_ability_id) > -1)
       }
 
-      if (Array.isArray(pokemon_type_id)) {
+      if (Array.isArray(pokemon_type_id) && pokemon_type_id.length > 0) {
         pokemonsID = pokemon_type_id.reduce((arr, type) => {
           return arr.concat(pokemonsID.filter((v) => v.pokemon_type_id.split(',').includes(type)));
         }, [])
       }
 
-      if (Array.isArray(pokemon_region_id)) {
+      if (Array.isArray(pokemon_region_id) && pokemon_region_id.length > 0) {
         pokemonsID = pokemon_region_id.reduce((arr, region) => {
           return arr.concat(pokemonsID.filter((v) => v.pokemon_region_id === region));
         }, [])
@@ -114,7 +74,7 @@ export class AppService {
     } else {
       zukan_id = id;
     }
-    const idx = pokemons.findIndex(v => v.zukan_id === zukan_id && zukan_sub_id === zukan_sub_id);
+    const idx = pokemons.findIndex(v => v.zukan_id === zukan_id && v.zukan_sub_id === zukan_sub_id);
     const res = _.cloneDeep(pokemons[idx]);
     if(idx !== pokemons.length - 1) {
       const {zukan_id, zukan_sub_id, pokemon_name} = pokemons[idx + 1]
@@ -133,13 +93,13 @@ export class AppService {
       }
     }
     const allAppearance = pokemons.filter(v => v.zukan_id === zukan_id);
-    if(allAppearance > 1) {
+    if(allAppearance.length > 1) {
       res.appearance = allAppearance;
     }
     if(res.evolutionary_route.length) {
-      res.evolutionary_route = res.evolutionary_route.map(id => {
-        const {zukan_id, zukan_sub_id, pokemon_name, pokemon_type_name} = pokemons.find(v => v.zukan_id === id && v.zukan_sub_id === 0)
-        return {zukan_id, zukan_sub_id, pokemon_name, pokemon_type_name};
+      res.evolutionary_route_detail = res.evolutionary_route.map(id => {
+        const {zukan_id, zukan_sub_id, pokemon_name, pokemon_type_name, file_name, pokemon_type_id} = pokemons.find(v => v.zukan_id === id && v.zukan_sub_id === 0)
+        return {zukan_id, zukan_sub_id, pokemon_name, pokemon_type_name, file_name, pokemon_type_id};
       })
     }
     return res;

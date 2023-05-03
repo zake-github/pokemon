@@ -1,5 +1,6 @@
 import { Controller, Get, Post, Param, Query, Body } from '@nestjs/common';
-import { AppService, pokemonTypePartial, pokemonAbilityType, pokemonTypeType, pokemonRegionType } from './app.service';
+import { AppService, } from './app.service';
+import type { pokemonTypePartial, pokemonAbilityType, pokemonTypeType, pokemonRegionType, basicDataType} from './type/index';
 import { GetListDto } from './dto/get-list.dto';
 // import {AppPipe} from './app.pipe';
 import { version } from './config';
@@ -50,5 +51,15 @@ export class AppController {
   @Get('max_id')
   getMaxId(): number {
     return this.appService.getMaxId();
+  }
+  // 所有基础数据
+  @Get('basic_data')
+  getBasicData(): basicDataType {
+    return {
+      ability: this.appService.getAbility(),
+      type: this.appService.getType(),
+      region: this.appService.getRegion(),
+      maxId: this.appService.getMaxId()
+    };
   }
 }

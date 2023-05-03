@@ -21,7 +21,7 @@ export class response<T> implements NestInterceptor {
     return next
       .handle()
       .pipe(
-        map((data) => ({ data, status: 0, message: '成功', success: true })),
+        map((data) => ({ data, status: 200, message: '成功', success: true })),
       );
   }
 }
