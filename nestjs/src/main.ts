@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import * as session from 'express-session'; // session
 import * as cors from 'cors'; // 跨域
-import { Reflector } from "@nestjs/core";
+import { Reflector } from '@nestjs/core';
 import { RoleGuard } from './guard/role.guard'; // 守卫全局引入
 import { VersioningType, ValidationPipe } from '@nestjs/common';
 import { NestExpressApplication } from '@nestjs/platform-express';
@@ -10,7 +10,7 @@ import { response } from './common/response'; //
 import { Request, Response, NextFunction } from 'express';
 import { apis } from './config';
 import { join } from 'path';
-const { createProxyMiddleware } = require('http-proxy-middleware');
+const { createProxyMiddleware } = require('http-proxy-middleware'); // eslint-disable-line @typescript-eslint/no-var-requires
 
 // 全局拦截（中间件）
 function middlewareAll(req: Request, res: Response, next: NextFunction) {
@@ -21,9 +21,9 @@ function middlewareAll(req: Request, res: Response, next: NextFunction) {
     return;
   }
 
-  const regs = apis.map(v => new RegExp(`^${v}$`))
+  const regs = apis.map((v) => new RegExp(`^${v}$`));
   let isPass = false;
-  regs.forEach(reg => {
+  regs.forEach((reg) => {
     if (reg.test(url)) {
       isPass = true;
     }
