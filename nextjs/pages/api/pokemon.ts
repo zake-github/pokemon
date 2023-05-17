@@ -62,6 +62,18 @@ export class PokemonService {
             return null
         }
     }
+    /**
+     * 获取宝可梦数量
+     * @returns
+     */
+    public async getMaxId(): Promise<AxiosResponse<any, any> | null> {
+        try {
+            const res = await this.client.get(`${baseUrl}/max_id`)
+            return res
+        } catch (error) {
+            return null
+        }
+    }
 
 }
 
