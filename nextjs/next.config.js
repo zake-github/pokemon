@@ -3,6 +3,9 @@ const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const withFonts = require('next-fonts');
 const nextConfig = {
+  // experimental: {
+  //   outputStandalone: true,
+  // },
   reactStrictMode: true,
   images: {
     remotePatterns: [

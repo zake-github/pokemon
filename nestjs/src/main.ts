@@ -27,7 +27,7 @@ function middlewareAll(req: Request, res: Response, next: NextFunction) {
     if (reg.test(url)) {
       isPass = true;
     }
-  })
+  });
   if (isPass) {
     next();
   } else {
@@ -47,7 +47,7 @@ async function bootstrap() {
       target: `https://www.pokemon.cn`,
       logLevel: 'debug',
       changeOrigin: true,
-    })
+    }),
   );
   app.use(
     session({
@@ -61,14 +61,13 @@ async function bootstrap() {
     }),
   );
   app.useStaticAssets(join(__dirname, '..', 'public'));
-  app.useStaticAssets(join(__dirname, '..', 'pokedex'),
-    {
-      prefix: '/img/pm',
-    });
+  app.useStaticAssets(join(__dirname, '..', 'pokedex'), {
+    prefix: '/img/pm',
+  });
 
   app.use(middlewareAll); // 拦截
   // 全局守卫
-  app.useGlobalGuards(new RoleGuard(new Reflector()))
+  app.useGlobalGuards(new RoleGuard(new Reflector()));
   app.useGlobalInterceptors(new response());
   app.useGlobalPipes(new ValidationPipe());
   app.enableVersioning({

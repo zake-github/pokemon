@@ -110,9 +110,13 @@ export default function PokemonPage(props: any) {
   const addRegion = (pokemon_region: any) => {
     const idx = checkRegion.findIndex(v => v === pokemon_region);
     idx > -1
-      ? setCheckRegion(checkRegion.filter(v => v !== pokemon_region))
+      ? setCheckRegion((prevCheckRegion) => {
+        return prevCheckRegion.filter(v => v !== pokemon_region)
+      })
       : // @ts-ignore
-        setCheckRegion([...checkRegion, pokemon_region]);
+        setCheckRegion((prevCheckRegion) => {
+          return prevCheckRegion.concat(pokemon_region)
+        });
   };
   return (
     <div className='contents pokemon-list-contents'>
